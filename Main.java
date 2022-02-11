@@ -32,11 +32,11 @@ public class Main {
 			System.out.println("1. Ingrese un libro con su isbn ");
 			System.out.println("2. Buscar libro por isbn ");
 			System.out.println("3. venta de un libro");
-			System.out.println("4. Mostrar los 3 libros m·s caros");
+			System.out.println("4. Mostrar los 3 libros m√°s caros");
 			System.out.println("5. Mostrar todos los libros");
 			System.out.println("0. Salir");
 			
-			System.out.println("Ingrese una opciÛn: ");	
+			System.out.println("Ingrese una opci√≥n: ");	
 			op = sc.nextInt();
 						
 			String isbn;
@@ -49,7 +49,7 @@ public class Main {
 			
 			case 1:			
 							
-				System.out.println("Ingrese el isbn del libro que quiere aÒadir al repostorio de la biblioteca: ");
+				System.out.println("Ingrese el isbn del libro que quiere a√±adir al repostorio de la biblioteca: ");
 				isbn = os.nextLine();
 				
 				inventario.result(isbn);				
@@ -57,7 +57,7 @@ public class Main {
 				if(inventario.result(isbn) != null) {
 					System.out.println("Ya se encuentra registrado el isbn ");
 				}else {
-					System.out.println("Ingresa un tÌtulo: ");
+					System.out.println("Ingresa un t√≠tulo: ");
 					titulo = os.nextLine();
 					
 					System.out.println("Ingrese el precio: ");
@@ -113,7 +113,7 @@ public class Main {
 				break;
 				
 			case 4:
-				
+				//falta la comparacion de valores
 				//Collections.sort(libros);
 				for (int i=0 ; i<3 ; i++) {
 					System.out.println(libros.get(i));
